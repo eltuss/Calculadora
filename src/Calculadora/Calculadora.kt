@@ -7,7 +7,9 @@ fun main(){
     val num1 = readLine()!!.toDouble()
     println("Digite o segundo valor: ")
     val num2 = readLine()!!.toDouble()
-    val escolha = Escolha(digito = )
+    println("Digite o numero escolhido (1)Soma - (2)multiplicação - (3)divisão - (4)subtração")
+    val digito = readLine()!!.toInt()
+    var escolha = digito
 
     if (escolha == 1){
         val soma = Soma(num1,num2){a,b -> a.plus(b)}
@@ -25,11 +27,6 @@ fun main(){
         println("Numero digitado para a escolha da operação é invalido")
 
     }
-
-}
-fun Escolha(digito:Int){
-    println("Digite o numero escolhido (1)Soma - (2)multiplicação - (3)divisão - (4)subtração")
-    val digito = readLine()!!.toInt()
 
 }
 
